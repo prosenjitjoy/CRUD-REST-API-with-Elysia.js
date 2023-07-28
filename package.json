@@ -1,0 +1,18 @@
+{
+  "name": "crud-api",
+  "version": "1.0.44",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts"
+  },
+  "dependencies": {
+    "arangojs": "^8.4.0",
+    "elysia": "latest",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.2",
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
