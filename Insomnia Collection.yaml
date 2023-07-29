@@ -1,0 +1,152 @@
+_type: export
+__export_format: 4
+__export_date: 2023-07-28T23:32:33.993Z
+__export_source: insomnia.desktop.app:v2023.4.0
+resources:
+  - _id: req_02f9e6df6d4845cc9dab64f770450b0f
+    parentId: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    modified: 1690587101312
+    created: 1690586814993
+    url: localhost:3000/delete/27fb4539-63e7-4054-a3bf-de4195b3cfed
+    name: delete todo
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690586814993
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    parentId: null
+    modified: 1690563190226
+    created: 1690563190226
+    name: Elysia CRUD
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_ba2038358f5441f0b30c8fc25d2ea1e0
+    parentId: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    modified: 1690586255801
+    created: 1690583971314
+    url: localhost:3000/update/b140cb67-abe7-4814-b2ce-b0156e525fd3
+    name: update todo
+    description: ""
+    method: PUT
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690583971314
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e18792e412184318a76930eabbfb5c0f
+    parentId: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    modified: 1690583888651
+    created: 1690583687121
+    url: localhost:3000/read/b140cb67-abe7-4814-b2ce-b0156e525fd3
+    name: get todo by id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1690583687121
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5d015d2d1ead4cfbba9d71d54b29d310
+    parentId: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    modified: 1690583752228
+    created: 1690566825201
+    url: localhost:3000/read
+    name: get todos
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_e560d28a4bbe420099e804ec2e6db3bf
+        name: limit
+        value: "10"
+        description: ""
+      - id: pair_ea25df97e7094873a144e38910f6d9db
+        name: offset
+        value: "0"
+        description: ""
+    headers: []
+    authentication: {}
+    metaSortKey: -1690566825201
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8c983a94f2f441f98bfc9794388b22f7
+    parentId: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    modified: 1690587036156
+    created: 1690563194247
+    url: localhost:3000/create
+    name: create todo
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "task3",
+        	"completed": false
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1690563194248
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_ba2713fae68f703aa20709eadfe10f90a48620e1
+    parentId: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    modified: 1690563190229
+    created: 1690563190229
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1690563190229
+    _type: environment
+  - _id: jar_ba2713fae68f703aa20709eadfe10f90a48620e1
+    parentId: wrk_6de118575f954c4c8b2671cc4e55a4c8
+    modified: 1690563190230
+    created: 1690563190230
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
